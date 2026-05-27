@@ -210,7 +210,7 @@ para que se realice el realce sintáctico en Python del mismo (no vale insertar 
 pantalla, debe hacerse en formato *markdown*).
 
 ##### Código de `estereo2mono()`
-```
+```python
 def estereo2mono(ficEste, ficMono, canal=2):
     """
     Lee un fichero de audio estéreo (16 bits) y genera un fichero monofónico.
@@ -259,7 +259,7 @@ def estereo2mono(ficEste, ficMono, canal=2):
         f_salida.write(datos_salida)
 ```
 ##### Código de `mono2estereo()`
-```
+```python
 def mono2estereo(ficIzq, ficDer, ficEste):
     """
     Fusiona dos ficheros monofónicos de 16 bits en un único fichero estéreo de 16 bits.
@@ -298,7 +298,7 @@ def mono2estereo(ficIzq, ficDer, ficEste):
         f_salida.write(datos_salida)
 ```
 ##### Código de `codEstereo()`
-```
+```python
 def codEstereo(ficEste, ficCod):
     """
     Codifica un fichero estéreo de 16 bits en un fichero de 32 bits (monofónico).
@@ -326,7 +326,7 @@ def codEstereo(ficEste, ficCod):
         f_salida.write(datos_salida)
 ```
 ##### Código de `decEstereo()`
-```
+```python
 def decEstereo(ficCod, ficEste):
     """
     Decodifica una señal de 32 bits para extraer y restaurar los dos canales de 16 bits.
